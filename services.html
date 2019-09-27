@@ -17,10 +17,93 @@
   <link rel="stylesheet" href="css/style1.css">
   <script src="https://use.fontawesome.come/releases/v5.0.8/js/all.js"></script>
 
+  <style>
+    svg {
+      position: absolute;
+      width: 240px;
+      height: 120px;
+      top: 0; right: 0;
+      bottom: 0; left: 0; 
+      margin: auto;
+    }
+    </style>
   
     <title>Your Event</title>
   </head>
-  <body>
+  <body onload="myFunction()" style="margin:0;">
+    <script>
+      var myVar;
+      
+      function myFunction() {
+        myVar = setTimeout(showPage,500);
+      }
+      
+      function showPage() {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("myDiv").style.display = "block";
+      }
+      </script>
+          <div id="loader">
+          <svg version="1.1" id="preloader" x="0px" y="0px" width="240px" height="120px" viewBox="0 0 240 120">
+  
+                  <style type="text/css" >
+                      <![CDATA[
+                  
+                          #plug,
+                          #socket { fill:rgb(255, 0, 0) }
+                  
+                          #loop-normal { fill: none; stroke: rgb(0, 255,0); stroke-width: 12 }
+                          #loop-offset { display: none }
+                  
+                      ]]>
+                  </style>
+                  
+                  <path id="loop-normal" class="st1" d="M120.5,60.5L146.48,87.02c14.64,14.64,38.39,14.65,53.03,0s14.64-38.39,0-53.03s-38.39-14.65-53.03,0L120.5,60.5
+                  L94.52,87.02c-14.64,14.64-38.39,14.64-53.03,0c-14.64-14.64-14.64-38.39,0-53.03c14.65-14.64,38.39-14.65,53.03,0z">
+                      <animate attributeName="stroke-dasharray" attributeType="XML"
+                          from="500, 50"  to="450 50"
+                          begin="0s" dur="2s"
+                          repeatCount="indefinite"/>
+                      <animate attributeName="stroke-dashoffset" attributeType="XML"
+                          from="-40"  to="-540"
+                          begin="0s" dur="2s"
+                          repeatCount="indefinite"/>  
+                  </path>
+                    
+                  <path id="loop-offset" d="M146.48,87.02c14.64,14.64,38.39,14.65,53.03,0s14.64-38.39,0-53.03s-38.39-14.65-53.03,0L120.5,60.5
+                  L94.52,87.02c-14.64,14.64-38.39,14.64-53.03,0c-14.64-14.64-14.64-38.39,0-53.03c14.65-14.64,38.39-14.65,53.03,0L120.5,60.5
+                  L146.48,87.02z"/>
+                    
+                  <path id="socket" d="M7.5,0c0,8.28-6.72,15-15,15l0-30C0.78-15,7.5-8.28,7.5,0z"/>  
+                    
+                  <path id="plug" d="M0,9l15,0l0-5H0v-8.5l15,0l0-5H0V-15c-8.29,0-15,6.71-15,15c0,8.28,6.71,15,15,15V9z"/>
+                    
+                  <animateMotion
+                      xlink:href="#plug"
+                      dur="2s"
+                      rotate="auto"
+                      repeatCount="indefinite"
+                      calcMode="linear"
+                      keyTimes="0;1"    
+                      keySplines="0.42, 0, 0.58, 1">
+                      <mpath xlink:href="#loop-normal"/>
+                  </animateMotion>
+                    
+                  <animateMotion             
+                      xlink:href="#socket"
+                      dur="2s"
+                      rotate="auto"
+                      repeatCount="indefinite"
+                      calcMode="linear"
+                      keyTimes="0;1"
+                      keySplines="0.42, 0, 0.58, 1">
+                      <mpath xlink:href="#loop-offset"/>
+                  </animateMotion>  
+                  </svg>
+              </div>  
+              
+              
+              <div style="display:none;" id="myDiv" class="animate-bottom">
     <header>
         <div class="overlay"></div>
         <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
@@ -329,6 +412,153 @@
           </div>
     </div>
 </section>
+<footer class="page-footer font-small unique-color-dark">
+
+  <div class="bg-success">
+    <div class="container">
+
+      <!-- Grid row-->
+      <div class="row py-4 d-flex align-items-center">
+
+        <!-- Grid column -->
+        <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+          <h6 class="mb-0 text-white">Get connected with us on social networks!</h6>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-6 col-lg-7 text-center text-white text-md-right">
+
+          <!-- Facebook -->
+          <a class="fb-ic">
+            <i class="fab fa-facebook-f white-text mr-4"> </i>
+          </a>
+          <!-- Twitter -->
+          <a class="tw-ic">
+            <i class="fab fa-twitter white-text mr-4"> </i>
+          </a>
+          <!-- Google +-->
+          <a class="gplus-ic">
+            <i class="fab fa-google-plus-g white-text mr-4"> </i>
+          </a>
+          <!--Linkedin -->
+          <a class="li-ic">
+            <i class="fab fa-linkedin-in white-text mr-4" > </i>
+          </a>
+          <!--Instagram-->
+          <a class="ins-ic">
+            <i class="fab fa-instagram white-text"> </i>
+          </a>
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row-->
+
+    </div>
+  </div>
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left mt-5">
+
+    <!-- Grid row -->
+    <div class="row mt-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+        <!-- Content -->
+        <h6 class="text-uppercase font-weight-bold"> 
+          <div>
+            <a class="" href="#"><span class="text-dark" style="font-size: 30px;font-weight: 100;">Your</span><span class="brand1 text-success">Event</span></a>
+          </div>
+        </h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 100px;border: 0.5px solid green;">
+        <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
+          consectetur
+          adipisicing elit.</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase text-dark">Sponsers</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;border: 0.5px solid green;">
+        <p>
+          <a href="#!">Amazon</a>
+        </p>
+        <p>
+          <a href="#!">Google</a>
+        </p>
+        <p>
+          <a href="#!">Facebook</a>
+        </p>
+        <p>
+          <a href="#!">Microsoft</a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase text-dark font-weight-bold">Useful links</h6>
+        <hr class=" accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;border: 0.5px solid green;">
+        <p>
+          <a href="#!">Your Account</a>
+        </p>
+        <p>
+          <a href="#!">Terms & Condition</a>
+        </p>
+        <p>
+          <a href="#!">FaQ</a>
+        </p>
+        <p>
+          <a href="#!">Help</a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase text-dark font-weight-bold">Contact</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;border: 0.5px solid green;">
+        <p>
+          <i class="fas fa-home mr-3"></i>Gujarat, India </p>
+        <p>
+          <i class="fas fa-envelope mr-3"></i> yourevent@help.com</p>
+        <p>
+          <i class="fas fa-phone mr-3"></i> +91 12345678</p>
+        <p>
+          <i class="fas fa-print mr-3"></i> +91 123456478</p>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3 bg-dark text-white">© 2019 Copyright:
+    <a href="" class="text-success"> www.yourevent.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+</div>
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
