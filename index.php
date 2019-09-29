@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -113,16 +117,19 @@
             <div class="w-100">
               <h1 style="font-size:500%"><span style="color: white;font-weight: lighter;">We Organise</span> <span class="text-success" style="font-weight: bold;">Your Event</span></h1>
               <br><p class="lead mb-0 text-white" style="font-family: 'Chilanka', cursive;      letter-spacing: 5px;">Specialized in Event Managment!</p>
-              <br><button class="btn btn-outline-success my-2 my-sm-0 mt-4" type="button" data-toggle="modal" data-target="#modalLRForm"><b style="letter-spacing: 2px;">Subscribe</b></button>
-
+              <br>
+              <?php     
+              if(!(isset($_SESSION['login'])))
+              {
+                echo '<button class="btn btn-outline-success my-2 my-sm-0 mt-4" type="button" data-toggle="modal" data-target="#modalLRForm"><b style="letter-spacing: 2px;">Subscribe</b></button>';
+              }
+              ?>
             </div>
           </div>
         </div>
       </header>
-
-
+<form action="subscribe.php" method="GET">
       <div class="modal fade mt-auto mb-auto" id="modalLRForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-
         <div class="modal-dialog cascading-modal" role="document">
           <div class="modal-content">
             <div class="modal-c-tabs"  >
@@ -191,7 +198,7 @@
                                   <i class="fas fa-envelope prefix" ></i>
                               </div>
                               <div class="col-9">
-                                  <input type="email" id="modalLRInput10" class="form-control form-control-sm validate" placeholder="Your email">
+                                  <input type="email" name="semail" id="modalLRInput10" class="form-control form-control-sm validate" placeholder="Your email">
                               </div>
                             </div>
                       </div>
@@ -202,7 +209,7 @@
                                   <i class="fas fa-lock prefix" ></i>
                               </div>
                               <div class="col-9">
-                                  <input type="password" id="modalLRInput11" class="form-control form-control-sm validate" placeholder="Your password">
+                                  <input type="password" name="spassword" id="modalLRInput11" class="form-control form-control-sm validate" placeholder="Your password">
                               </div>
                             </div>
                       </div>
@@ -213,7 +220,7 @@
                                   <i class="fas fa-lock prefix" ></i>
                               </div>
                               <div class="col-9">
-                                  <input type="password" id="modalLRInput11" class="form-control form-control-sm validate" placeholder="Repeat password">
+                                  <input type="password" name="srpassword" id="modalLRInput11" class="form-control form-control-sm validate" placeholder="Repeat password">
                               </div>
                             </div>
                       </div>
@@ -238,28 +245,67 @@
           </div>
         </div>
       </div>
-      
+      </form>
+
       <div  style="position: sticky;top:0;  z-index: 1030;">
   <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black;padding: 0%;">
    
     <div>
     <a class="navbar-brand ml-2" href="#"><span class="brand">Your</span><span class="brand1 text-success">Event</span></a>
    </div>
-
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
       <ul class="navbar-nav ml-auto">
-        <!--<li class="nav-item ">
-          <a class="nav-link" href="#">
-            <i class="fab fa-facebook fbicon"></i> 
-            
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">
-            <i class="fab fa-twitter twicon" ></i> </a>
-        </li>-->
+       
         <ul class="navbar-nav ml-auto mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Categories.html">Categories</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <li class="nav-item dropdown active mr-auto ml-auto">
+          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-user"></i> Profile </a>
+          <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4">
+          <?php     
+              if(!(isset($_SESSION['login'])))
+              {
+                echo '<a class="dropdown-item" href="#">My account</a>';
+              }
+              else
+              {
+                echo '<a class="dropdown-item" href="#">Sign In AS</a>';
+                echo $_GET['semail'];
+              }
+              
+              ?>
+            <a class="dropdown-item" href="#">Log out</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+  
+<!--<div class="container-fluid" style="background-color: black;padding: 0%;" >
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto mr-auto">
           <li class="nav-item active">
             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
           </li>
@@ -278,33 +324,20 @@
             aria-haspopup="true" aria-expanded="false">
             <i class="fa fa-user"></i> Profile </a>
           <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4">
-            <a class="dropdown-item" href="#">My account</a>
+          <?php     
+              if(!(isset($_SESSION['login'])))
+              {
+                echo '<a class="dropdown-item" href="#">My account</a>';
+              }
+              else
+              {
+                echo '<a class="dropdown-item" href="#">Sign In AS</a>';
+                echo $_GET['semail'];
+              }
+              
+              ?>
             <a class="dropdown-item" href="#">Log out</a>
           </div>
-        </li>
-      </ul>
-    </div>
-  </nav>
-</div>
-  
-<!--div class="container-fluid" style="background-color: black;padding: 0%;" >
-  <nav class="navbar navbar-expand-lg navbar-dark">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#Categories">Categories</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#Service">Services</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
         </li>
       </ul>
     </div>
@@ -333,12 +366,13 @@
             <img style=" filter: brightness(30%);" class="img-responsive card-img" src="image/carpet-couple-dress-1589216.jpg" alt="">
             <div class="overlay">
                <h2 class="text-light" style="font-family: 'Acme', sans-serif;">Family Events</h2>
-               <a class="info" href="common.html">Wedding<br>
+               <a class="info" href="family.php">Wedding<br>
                 engagement<br>
                 Birthday<br>
                 anniversary<br> 
                 Etc.
                </a>
+               <a href="C:\wamp64\www\Event\common.html"> wdsf</a>
                
             </div>
         </div>
@@ -350,7 +384,7 @@
             <img style=" filter: brightness(30%);" class="img-responsive card-img" src="image/chairs-conference-room-digital-nomad-1181395.jpg" alt="">
             <div class="overlay">
                <h2 class="text-light" style="font-family: 'Acme', sans-serif;">Business Events</h2>
-               <a class="info" style="font-size: 12px;" href="#">Business Dinner<br>
+               <a class="info" style="font-size: 12px;" href="Business.php">Business Dinner<br>
                 Conference<br>
                 Meeting<br>
                 Seminars<br> 
@@ -397,7 +431,7 @@
 </section>
 
 
-<section style="background-color: white;height:560px;">
+<section style="background-color: white;height:600px;">
   <div class="text-center container-fluid" style="margin-top: 0px;margin-bottom:30px;">
     <h1 class="display-3" >
       <Span class="text-success" style="font-size: 40px;
@@ -409,7 +443,7 @@
 
 
   <div class="container">
-    <div class="row bg-light text-dark">
+  <div class="row bg-light text-dark">
       <div class="col-6">
         <div class="row">
           <div class="col-2 bg-light mr-2" >
