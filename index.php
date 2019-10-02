@@ -16,9 +16,10 @@ session_start();
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link rel="stylesheet" href="css/style.css">
 <link href="https://fonts.googleapis.com/css?family=Chilanka&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="css/all.css">
 	<!-- Font Awesome Icon -->
-  <link rel="stylesheet" href="css/style1.css">
   <script src="https://use.fontawesome.come/releases/v5.0.8/js/all.js"></script>
   <style>
     svg {
@@ -28,6 +29,12 @@ session_start();
       top: 0; right: 0;
       bottom: 0; left: 0; 
       margin: auto;
+    }
+    .hedding{
+        font-size:40px;
+        font-family: 'Roboto', sans-serif;
+        font-weight:800;
+        letter-spacing:2px;
     }
   </style>
   
@@ -401,7 +408,7 @@ session_start();
               <img style=" filter: brightness(30%);" class="img-responsive card-img" src="image/banking-business-communication-2432221.jpg" alt="">
               <div class="overlay">
                  <h2 class="text-light" style="font-family: 'Acme', sans-serif;">Start Up</h2>
-                 <a class="info" href="#">Opening<br class="mb-4">
+                 <a class="info" href="startup.php">Opening<br class="mb-4">
                   product <br> lanching<br class="mb-4">
                   Etc.
                  </a>
@@ -566,6 +573,36 @@ session_start();
   
 </section>
 
+
+<section>
+    <div class="text-center container-fluid" style="margin-top: 20px;margin-bottom:10px;">
+        <h1 class="display-3" >
+          <Span class="text-success" style="font-size: 50px;font-weight: bold;text-transform: uppercase;">Business</Span> 
+          <span style="color: black;opacity: 0.7;transform: ;font-size: 40px;text-transform: uppercase;font-weight:100;"> With Us</span>
+        </h1>
+        <p style="font-size: 20px;" class="text-dark">
+                 It's Your Time
+        </p>
+      </div>
+    <div class="" style="padding-left:90px;padding-right:90px;padding-bottom:90px">
+        <div class="card bg-dark text-white border-0" style="">
+            <img style="filter: brightness(30%);border-radius: 8px;" style="height: 50%"  src="image/bwu1.jpg" class="card-img" alt="Wedding.jpg">
+            <div class="card-img-overlay" style="padding:80px">
+                <h5 class="card-title text-white hedding" style="">Build Your Shop Online With <span class="text-success">Your Event</span></h5>
+                <br><h5 class="card-text">5 reasons to do business with us</h5>
+                <span class="card-text">Our team and way of working</span><br>
+                <span class="card-text">Our Credentials</span><br>
+                <span class="card-text">Our knowledge of your business and your problems</span><br>
+                <span class="card-text">Our undertaking to add value</span><br>
+                <span class="card-text">Our international focus</span><br><br><br>
+
+            
+                <button class="btn btn-lg btn-outline-success my-2 my-sm-0 mt-4" type="button" data-toggle="modal" data-target="#darkModalForm"><b style="letter-spacing: 1.5px;">Register Your Shop Now</b></button>  
+              </div>
+            </div>
+        </div>
+    
+</section>
 
 <!-- Footer -->
 <footer class="page-footer font-small unique-color-dark">

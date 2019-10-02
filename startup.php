@@ -85,8 +85,8 @@
 <div class="text-center container-fluid" style="margin-top: 20px;margin-bottom:20px;">
     <h1 class="display-3" >
       <span style="color: black;opacity: 0.7;transform: ;font-size: 50px;text-transform: uppercase;font-weight:lighter;;
-      ;">Your</span>
-       <Span class="text-success" style="font-size: 70px;font-weight: bold;text-transform: uppercase;">Business Event</Span> 
+      ;">Your Business </span>
+       <Span class="text-success" style="font-size: 70px;font-weight: bold;text-transform: uppercase;">Startup</Span> 
     </h1>
     <p style="font-size: 20px;" class="text-dark">
               Book <Span class="text-success" style="text-transform: capitlize;">Your Event</Span> Date  Now
@@ -95,12 +95,12 @@
 
 <div class="" style="padding:60px">
     <div class="card bg-dark text-white border-0" style="">
-    <img style="filter: brightness(30%);border-radius: 8px;"  src="image/b1.jpg" class="card-img" alt="Wedding.jpg">
+    <img style="filter: brightness(30%);border-radius: 8px;"  src="image/o1.jpg" class="card-img" alt="Wedding.jpg">
     <div class="card-img-overlay" style="padding:80px">
-        <h5 class="card-title text-white hedding" style="">Business Dinner</h5>
-        <p class="card-text">We Can Organize You Business Dinner. All Types Of Sevices We Provide For Your Business Dinner Like A "Waiters take orders and serve food and beverages to patrons at tables in dining esthblishment.","Dercoration","We sreve food and drink as per your choice.",etc. </p>
+        <h5 class="card-title text-white hedding" style="">Opening</h5>
+        <p class="card-text">We Can Organize Opening Ceremany For Your Shop Or Other business. All Types Of Sevices We Provide For Your Wedding Like A "Waiters take orders and serve food and beverages to patrons at tables in dining esthblishment.","Shop Dercoration","We sreve food and drink as per your choice.",etc. </p>
         <p class="card-text">Booking <span style="">Your</span>
-       <Span class="text-success" style="">Business Dinner</Span> Date Now</p>
+       <Span class="text-success" style="">Event</Span> Date Now</p>
        <a href="Wselect.html"><button class="btn btn-outline-success my-2 my-sm-0 mt-4" type="button" data-toggle="modal" data-target="#darkModalForm"><b style="letter-spacing: 1.5px;">Book Now</b></button></a>  </div>
     </div>
     </div>
@@ -108,49 +108,24 @@
 
 <div class="" style="padding:60px">
     <div class="card bg-dark text-white border-0" style="">
-        <img style="filter: brightness(30%);border-radius: 8px;"  src="image/b2.jpg" class="card-img" alt="Wedding.jpg">
+        <img style="filter: brightness(40%);border-radius: 8px;"  src="image/o2.jpg" class="card-img" alt="Wedding.jpg">
         <div class="card-img-overlay" style="padding:80px">
-            <h5 class="card-title text-white hedding" style="">Conference</h5>
-            <p class="card-text">We Can Organize You Conference. All Types Of Sevices We Provide For Your Conference Meeting Like A "Benqute Hall","We Provide A Laptop For Better Comunication","We sreve Water as per your choice.",etc. </p>
+            <h5 class="card-title text-white hedding" style="">Product Lanching</h5>
+            <p class="card-text">We Can Organize Your Product launching Event. All Types Of Sevices We Provide For Your Product Lanching Event Like A "Make A Templete For Your Product Advertisement","Benqute Hall","Dercoration","We sreve food and drink as per your choice.",etc. </p>
             <p class="card-text">Booking <span style="">Your</span>
-            <Span class="text-success" style="">Conference</Span> Date Now</p>
+            <Span class="text-success" style="">Product Launching</Span> Date Now</p>
             <button class="btn btn-outline-success my-2 my-sm-0 mt-4" type="button" data-toggle="modal" data-target="#darkModalForm"><b style="letter-spacing: 1.5px;">Book Now</b></button>  </div>
         </div>
     </div>
 </div>
 
 
-<div class="" style="padding:60px">
-    <div class="card bg-dark text-white border-0" style="">
-        <img style="filter: brightness(30%);border-radius: 8px;"  src="image/b3.jpg" class="card-img" alt="Wedding.jpg">
-        <div class="card-img-overlay" style="padding:80px">
-            <h5 class="card-title text-white hedding" style="">Meeting</h5>
-            <p class="card-text">We Can Organize You Meeting. All Types Of Sevices We Provide For Your Meeting Like A "Benqute Hall","Waiters serve beverages to patrons at tables",,"Wedrink as per your choice.",etc. </p>
-            <p class="card-text">Booking <span style="">Your</span>
-            <Span class="text-success" style="">Meeting</Span> Date Now</p>
-            <button class="btn btn-outline-success my-2 my-sm-0 mt-4" type="button" data-toggle="modal" data-target="#darkModalForm"><b style="letter-spacing: 1.5px;">Book Now</b></button>  </div>
-        </div>
-    </div>
-</div>
 
 <div class="" style="padding:60px">
     <div class="card bg-dark text-white border-0" style="">
-        <img style="filter: brightness(30%);border-radius: 8px;"  src="image/b4.jpg" class="card-img" alt="Wedding.jpg">
+        <img style="filter: brightness(30%);border-radius: 8px;"  src="image/4.jpg" class="card-img" alt="Wedding.jpg">
         <div class="card-img-overlay" style="padding:80px">
-            <h5 class="card-title text-white hedding" style="">Seminars</h5>
-            <p class="card-text">We Can Organize You Seminars. All Types Of Sevices We Provide For Your Seminars Like A "Benqute Hall","Auditarium Hall With Centeral AC for you comfirt",etc. </p>
-            <p class="card-text">Booking <span style="">Your</span>
-            <Span class="text-success" style="">Seminars</Span> Date Now</p>
-            <button class="btn btn-outline-success my-2 my-sm-0 mt-4" type="button" data-toggle="modal" data-target="#darkModalForm"><b style="letter-spacing: 1.5px;">Book Now</b></button>  </div>
-        </div>
-    </div>
-</div>
-
-<div class="" style="padding:60px">
-    <div class="card bg-dark text-white border-0" style="">
-        <img style="filter: brightness(30%);border-radius: 8px;"  src="image/b5.jpg" class="card-img" alt="Wedding.jpg">
-        <div class="card-img-overlay" style="padding:80px">
-            <h5 class="card-title text-white hedding" style="">If You Want To We Organize Your Other Event Then Tell Us Here 
+            <h5 class="card-title text-white hedding" style="">If You Want To We Organize Your Other Start Up Event Then Tell Us Here 
             <a href="Wrform.html"><button class="btn btn-outline-success my-2 my-sm-0 mt-4" type="button" data-toggle="modal" data-target="#darkModalForm"><b style="letter-spacing: 1.5px;">Click Here</b></button></a> </h5>
             <p class="card-text">We Definatly Organize Your Event. </p>
             <p class="card-text">Thank <span style="">You</span>

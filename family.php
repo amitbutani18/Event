@@ -34,7 +34,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black;padding: 0%;">
    
     <div>
-    <a class="navbar-brand ml-2" href="#"><span class="brand">Your</span><span class="brand1 text-success">Event</span></a>
+    <a class="navbar-brand ml-2" href="index.php"><span class="brand">Your</span><span class="brand1 text-success">Event</span></a>
    </div>
    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
