@@ -114,7 +114,7 @@
             <p class="card-text">We Can Organize You Engagement. All Types Of Sevices We Provide For Your Engagement Like A "Benqute Hall","Waiters take orders and serve beverages to patrons at tables in dining esthblishment.","Dercoration","We sreve food and drink as per your choice.",etc. </p>
             <p class="card-text">Booking <span style="">Your</span>
             <Span class="text-success" style="">Engagement</Span> Date Now</p>
-            <button class="btn btn-outline-success my-2 my-sm-0 mt-4" type="button" data-toggle="modal" data-target="#darkModalForm"><b style="letter-spacing: 1.5px;">Book Now</b></button>  </div>
+            <a href="Wselect.html"><button class="btn btn-outline-success my-2 my-sm-0 mt-4" type="button" data-toggle="modal" data-target="#darkModalForm"><b style="letter-spacing: 1.5px;">Book Now</b></button></a>  </div>
         </div>
     </div>
 </div>
@@ -128,7 +128,7 @@
             <p class="card-text">We Can Organize You Birthday. All Types Of Sevices We Provide For Your Birthday Like A "Benqute Hall","Cack Cutting","Waiters take orders and serve beverages to patrons at tables in dining esthblishment.","Dercoration","We sreve food and drink as per your choice.",etc. </p>
             <p class="card-text">Booking <span style="">Your</span>
             <Span class="text-success" style="">Birthday</Span> Date Now</p>
-            <button class="btn btn-outline-success my-2 my-sm-0 mt-4" type="button" data-toggle="modal" data-target="#darkModalForm"><b style="letter-spacing: 1.5px;">Book Now</b></button>  </div>
+            <a href="Wselect.html"><button class="btn btn-outline-success my-2 my-sm-0 mt-4" type="button" data-toggle="modal" data-target="#darkModalForm"><b style="letter-spacing: 1.5px;">Book Now</b></button></a>  </div>
         </div>
     </div>
 </div>

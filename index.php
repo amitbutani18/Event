@@ -278,7 +278,7 @@ session_start();
             <a class="nav-link" href="services.html">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            <a class="nav-link" href="about.html">About</a>
           </li>
         </ul>
         <li class="nav-item dropdown active mr-auto ml-auto">
@@ -379,7 +379,6 @@ session_start();
                 anniversary<br> 
                 Etc.
                </a>
-               <a href="C:\wamp64\www\Event\common.html"> wdsf</a>
                
             </div>
         </div>
@@ -597,7 +596,7 @@ session_start();
                 <span class="card-text">Our international focus</span><br><br><br>
 
             
-                <button class="btn btn-lg btn-outline-success my-2 my-sm-0 mt-4" type="button" data-toggle="modal" data-target="#darkModalForm"><b style="letter-spacing: 1.5px;">Register Your Shop Now</b></button>  
+                <a href="form.php"><button class="btn btn-lg btn-outline-success my-2 my-sm-0 mt-4" type="button" data-toggle="modal" data-target="#darkModalForm"><b style="letter-spacing: 1.5px;">Register Your Shop Now</b></button> </a> 
               </div>
             </div>
         </div>
